@@ -7,7 +7,6 @@ class TodoTextField extends StatelessWidget {
   Widget build(BuildContext context) {
     return const TextField(
       decoration: InputDecoration(
-        border: OutlineInputBorder(),
         hintText: 'Create todo',
       ),
     );

@@ -14,21 +14,33 @@ class TodoListScreen extends StatelessWidget {
       body: const SafeArea(
         child: Padding(
           padding: EdgeInsets.all(12),
-          child: Column(
-            children: [
-              Expanded(
-                child: SingleChildScrollView(
-                  child: TodoList(),
-                ),
-              ),
-              SizedBox(
-                height: 50,
-                child: TodoTextField(),
-              )
-            ],
-          ),
+          child: TodoListView(),
         ),
       ),
+    );
+  }
+}
+
+class TodoListView extends StatefulWidget {
+  const TodoListView({super.key});
+
+  @override
+  State<StatefulWidget> createState() => _TodoListViewState();
+}
+
+class _TodoListViewState extends State<TodoListView> {
+  final todoList = ['Todo1', 'Todo2'];
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: [
+        Expanded(child: TodoList(list: todoList)),
+        const SizedBox(
+          height: 50,
+          child: TodoTextField(),
+        )
+      ],
     );
   }
 }
