@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
 
 class TodoItem extends StatelessWidget {
-  const TodoItem({super.key, required this.title});
+  const TodoItem(
+      {super.key, required this.title, required this.onRemovePressed});
 
   final String title;
+
+  final VoidCallback onRemovePressed;
 
   @override
   Widget build(BuildContext context) {
@@ -15,9 +18,7 @@ class TodoItem extends StatelessWidget {
           icon: const Icon(Icons.remove_circle),
           tooltip: "Delete $title",
           color: Colors.red.shade400,
-          onPressed: () {
-            print("Hello");
-          },
+          onPressed: onRemovePressed,
         ),
       ],
     );
