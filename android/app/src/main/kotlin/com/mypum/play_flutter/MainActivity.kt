@@ -1,4 +1,4 @@
-package com.mypum.play_flutter
+package com.mypum.flutter_todo_list
 
 import io.flutter.embedding.android.FlutterActivity
 

@@ -1,6 +1,6 @@
 {
-    "name": "play_flutter",
-    "short_name": "play_flutter",
+    "name": "flutter_todo_list",
+    "short_name": "flutter_todo_list",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

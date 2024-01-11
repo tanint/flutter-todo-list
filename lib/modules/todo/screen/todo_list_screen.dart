@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import 'package:play_flutter/modules/todo/widget/todo_item.dart';
-import 'package:play_flutter/modules/todo/widget/todo_text_field.dart';
+import 'package:flutter_todo_list/modules/todo/widget/todo_item.dart';
+import 'package:flutter_todo_list/modules/todo/widget/todo_text_field.dart';
 
 class TodoListScreen extends StatelessWidget {
   const TodoListScreen({super.key});

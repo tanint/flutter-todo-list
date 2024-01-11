@@ -1,4 +1,4 @@
-# play_flutter
+# flutter_todo_list
 
 A new Flutter project.
 
